@@ -8,14 +8,14 @@
 <meta name="theme-color" content="#1f3f2c">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<!-- ponytail: live URL below in 5 places; change all of them if the site moves to a custom domain -->
-<link rel="canonical" href="https://akshardhamassociate.github.io/beevora-honey/">
+<!-- ponytail: live URL below in 4 places; change all of them if the site moves to a custom domain -->
+<link rel="canonical" href="https://luvz9799.github.io/beevora-check/">
 <meta property="og:type" content="product">
 <meta property="og:site_name" content="Beevora">
 <meta property="og:title" content="Beevora Kikar Honey: Pure by Nature, Goodness in Every Drop">
 <meta property="og:description" content="Raw, minimally processed honey from the nectar of Kikar (Babool) blossoms. Single ingredient, no additives, no preservatives. Order on WhatsApp.">
-<meta property="og:url" content="https://akshardhamassociate.github.io/beevora-honey/">
-<meta property="og:image" content="https://akshardhamassociate.github.io/beevora-honey/assets/og-image.jpg">
+<meta property="og:url" content="https://luvz9799.github.io/beevora-check/">
+<meta property="og:image" content="https://luvz9799.github.io/beevora-check/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Beevora Kikar Honey — apiary under Kikar trees">
@@ -27,7 +27,7 @@
   "name": "Beevora Kikar Honey",
   "alternateName": ["Beevora Babool Honey", "Beevora Acacia Honey"],
   "description": "Raw, minimally processed honey from the nectar of Kikar (Acacia) flowers in the forests of India. Single ingredient: Natural Kikar Honey. No additives, no preservatives.",
-  "image": ["https://akshardhamassociate.github.io/beevora-honey/assets/og-image.jpg"],
+  "image": ["https://luvz9799.github.io/beevora-check/assets/og-image.jpg"],
   "brand": {"@type": "Brand", "name": "Beevora"},
   "category": "Food & Beverages > Honey",
   "countryOfOrigin": "IN",
@@ -259,7 +259,7 @@ header.scrolled{box-shadow:0 8px 24px -16px rgba(20,40,29,.45)}
 .photo:has(img){box-shadow:0 30px 60px -28px rgba(20,40,29,.55);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s ease-out}
 .photo:has(img)::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(255,236,190,.38) 50%,transparent 65%);transform:translateX(-120%);animation:sweep 6s ease-in-out infinite 1.5s}
 @keyframes sweep{0%{transform:translateX(-120%)}35%,100%{transform:translateX(120%)}}
-/* subtle 3D sway on the hero circle: gentle rise + tilt, nothing flashy */
+/* subtle 3D sway on the hero circle */
 .hero .art{position:relative;perspective:900px;animation:float 7s ease-in-out infinite}
 .hero .art::before{content:"";position:absolute;inset:8% 8% -4%;background:radial-gradient(closest-side,rgba(232,160,40,.55),transparent);filter:blur(30px);z-index:-1;animation:glow 4s ease-in-out infinite alternate}
 @keyframes float{0%,100%{transform:translateY(0) rotateX(0deg) rotateY(0deg)}50%{transform:translateY(-12px) rotateX(2deg) rotateY(-4deg)}}
@@ -272,7 +272,6 @@ header.scrolled{box-shadow:0 8px 24px -16px rgba(20,40,29,.45)}
 .steps::after{content:"";position:absolute;left:14px;top:12px;width:2px;height:calc(100% - 24px);background:var(--honey);transform-origin:top;transform:scaleY(var(--p,0));transition:transform .2s linear}
 .steps li::before{position:relative;z-index:1;background:var(--cream);width:32px;font-size:1.25rem;padding:2px 0}
 .item,.pack,.nots div{transition:transform .35s,box-shadow .35s,border-color .35s}
-/* gentle 3D lean-back on hover for pack cards */
 .pack:hover{transform:translateY(-6px) rotateX(3deg);box-shadow:0 24px 40px -24px rgba(20,40,29,.5);border-color:var(--honey)}
 .item:hover{transform:translateY(-4px)}
 .float{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;background:#1f8f4e;color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.55)}
@@ -409,8 +408,8 @@ main img{cursor:zoom-in}
       </div>
     </div>
     <div class="art rise" style="--d:.35s">
-      <figure class="photo tilt" data-need="Photo needed: assets/Sunlit Rows of Rural Beehives.png">
-        <img src="assets/Sunlit%20Rows%20of%20Rural%20Beehives.png" width="1456" height="1092" fetchpriority="high" decoding="async" alt="Rows of Beevora hive boxes under Kikar trees beside a blooming mustard field at the apiary" onerror="this.remove()">
+      <figure class="photo tilt" data-need="Photo needed: assets/hero-apiary.png">
+        <img src="assets/hero-apiary.png" width="1456" height="1092" fetchpriority="high" decoding="async" alt="Rows of Beevora hive boxes under Kikar trees beside a blooming mustard field at the apiary" onerror="console.warn('Image missing:', this.src); this.remove()">
       </figure>
     </div>
     <div class="feats">
@@ -432,18 +431,18 @@ main img{cursor:zoom-in}
       <p class="cap reveal" style="--d:.2s">Kikar, also called Babool, grows wild along rivers and on dry land. In season its thorny branches fill with small golden flower balls, and our bees gather their nectar.</p>
       <ul class="reveal" style="--d:.3s"><li>Golden pom-pom flowers</li><li>Feathery, fine leaves</li><li>Hardy, thorny riverside tree</li></ul>
     </div>
-    <figure class="tall reveal" style="--d:.15s"><img src="assets/kikar-bee.jpg" width="924" height="2000" alt="A honeybee collecting nectar from round yellow Kikar flowers" loading="lazy" decoding="async" style="object-position:30% 58%"><figcaption>Bee on Kikar blossom</figcaption></figure>
+    <figure class="tall reveal" style="--d:.15s"><img src="assets/kikar-bee.jpg" width="924" height="2000" alt="A honeybee collecting nectar from round yellow Kikar flowers" loading="lazy" decoding="async" style="object-position:30% 58%" onerror="console.warn('Image missing:', this.src); this.remove()"><figcaption>Bee on Kikar blossom</figcaption></figure>
     <div class="stack">
-      <figure class="reveal" style="--d:.25s"><img src="assets/kikar-branch.jpg" width="960" height="640" alt="A Kikar branch with fine leaves and yellow flower balls" loading="lazy" decoding="async"><figcaption>Kikar flowers and leaves</figcaption></figure>
-      <figure class="reveal" style="--d:.35s"><img src="assets/kikar-tree.jpg" width="960" height="640" alt="Kikar tree branches covered with small yellow flowers" loading="lazy" decoding="async"><figcaption>Kikar tree in bloom</figcaption></figure>
+      <figure class="reveal" style="--d:.25s"><img src="assets/kikar-branch.jpg" width="960" height="640" alt="A Kikar branch with fine leaves and yellow flower balls" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"><figcaption>Kikar flowers and leaves</figcaption></figure>
+      <figure class="reveal" style="--d:.35s"><img src="assets/kikar-tree.jpg" width="960" height="640" alt="Kikar tree branches covered with small yellow flowers" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"><figcaption>Kikar tree in bloom</figcaption></figure>
     </div>
   </div>
 </section>
 
 <section id="origin">
   <div class="wrap split">
-    <figure class="photo reveal" data-need="Photo needed: assets/White Bucket Showroom with Honey Branding.png">
-      <img src="assets/White%20Bucket%20Showroom%20with%20Honey%20Branding.png" width="1456" height="1092" alt="Beevora honey facility with sealed buckets of honey stacked and ready for packing" loading="lazy" decoding="async" style="object-position:68% 30%" onerror="this.remove()">
+    <figure class="photo reveal" data-need="Photo needed: assets/facility.png">
+      <img src="assets/facility.png" width="1456" height="1092" alt="Beevora honey facility with sealed buckets of honey stacked and ready for packing" loading="lazy" decoding="async" style="object-position:68% 30%" onerror="console.warn('Image missing:', this.src); this.remove()">
     </figure>
     <div>
       <p class="kicker reveal">Origin</p>
@@ -465,9 +464,9 @@ main img{cursor:zoom-in}
     <h2 class="reveal" style="--d:.1s">Straight from our hives</h2>
     <p class="lead reveal" style="--d:.2s">Managed apiaries, hand-inspected frames and careful extraction — the way real honey is made.</p>
     <div class="grid">
-      <figure class="reveal" style="--d:.15s"><img src="assets/Dense%20Honeybee%20Swarm%20on%20Hive%20Frame.png" width="1080" height="1440" alt="A dense cluster of honeybees covering a hive frame" loading="lazy" decoding="async"><figcaption>The colony, up close</figcaption></figure>
-      <figure class="reveal" style="--d:.25s"><img src="assets/Beekeeper%20Inspecting%20a%20Busy%20Honeycomb.png" width="1456" height="1088" alt="A beekeeper lifting a honeycomb frame covered with bees at the apiary" loading="lazy" decoding="async"><figcaption>Frame by frame</figcaption></figure>
-      <figure class="reveal" style="--d:.35s"><img src="assets/Beekeepers%20Working%20Under%20Green%20Netting.png" width="1456" height="1080" alt="Beekeepers uncapping honeycomb and spinning frames in the honey extractor" loading="lazy" decoding="async"><figcaption>Harvest &amp; extraction</figcaption></figure>
+      <figure class="reveal" style="--d:.15s"><img src="assets/swarm.png" width="1080" height="1440" alt="A dense cluster of honeybees covering a hive frame" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"><figcaption>The colony, up close</figcaption></figure>
+      <figure class="reveal" style="--d:.25s"><img src="assets/frames.png" width="1456" height="1088" alt="A beekeeper lifting a honeycomb frame covered with bees at the apiary" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"><figcaption>Frame by frame</figcaption></figure>
+      <figure class="reveal" style="--d:.35s"><img src="assets/harvest.png" width="1456" height="1080" alt="Beekeepers uncapping honeycomb and spinning frames in the honey extractor" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"><figcaption>Harvest &amp; extraction</figcaption></figure>
     </div>
   </div>
 </section>
@@ -550,9 +549,9 @@ main img{cursor:zoom-in}
     <p class="lead reveal" style="--d:.2s">Message us on WhatsApp for the current price and delivery to your city.</p>
     <!-- ponytail: pack shots temporary origin-jar.webp hain; jab 400/800/1000 ke alag photos milein, in teeno src ko badal dena -->
     <div class="packs">
-      <div class="pack reveal"><div class="img" data-need="Jar photo needed: 400 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 400 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">400 g</span><span class="price">Price on WhatsApp</span></div><p>Try it first</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 400 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
-      <div class="pack pop reveal"><span class="tag">MOST POPULAR</span><div class="img" data-need="Jar photo needed: 800 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 800 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">800 g</span><span class="price">Price on WhatsApp</span></div><p>Family pack, our most chosen size</p><a class="btn btn-gold" data-wa="Hello, I would like to order Beevora Kikar Honey 800 g. Please share the price and delivery details." href="#enquire"><svg aria-hidden="true"><use href="#wa"/></svg>Order on WhatsApp</a></div></div>
-      <div class="pack reveal"><div class="img" data-need="Jar photo needed: 1000 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 1000 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">1000 g</span><span class="price">Price on WhatsApp</span></div><p>Best value for daily use</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 1000 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
+      <div class="pack reveal"><div class="img" data-need="Jar photo needed: 400 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 400 g jar" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"></div><div class="body"><div class="row"><span class="w">400 g</span><span class="price">Price on WhatsApp</span></div><p>Try it first</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 400 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
+      <div class="pack pop reveal"><span class="tag">MOST POPULAR</span><div class="img" data-need="Jar photo needed: 800 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 800 g jar" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"></div><div class="body"><div class="row"><span class="w">800 g</span><span class="price">Price on WhatsApp</span></div><p>Family pack, our most chosen size</p><a class="btn btn-gold" data-wa="Hello, I would like to order Beevora Kikar Honey 800 g. Please share the price and delivery details." href="#enquire"><svg aria-hidden="true"><use href="#wa"/></svg>Order on WhatsApp</a></div></div>
+      <div class="pack reveal"><div class="img" data-need="Jar photo needed: 1000 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 1000 g jar" loading="lazy" decoding="async" onerror="console.warn('Image missing:', this.src); this.remove()"></div><div class="body"><div class="row"><span class="w">1000 g</span><span class="price">Price on WhatsApp</span></div><p>Best value for daily use</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 1000 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
     </div>
   </div>
 </section>

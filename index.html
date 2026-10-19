@@ -117,7 +117,7 @@ header .btn{padding:.6rem 1rem;font-size:.9rem}
 .hero .lead{color:#d6dfd0;margin-bottom:1.8rem}
 .btn-gold{background:#f0c15a;color:#1f3f2c}.btn-gold:hover{background:#f6cf72}
 .hero .photo{aspect-ratio:1/1;border-radius:50%;border:3px solid #f0c15a;box-shadow:0 0 0 14px rgba(240,193,90,.12),0 40px 80px -30px rgba(0,0,0,.8)}
-.hero .photo img{object-position:50% 62%}
+.hero .photo img{object-position:50% 60%}
 .feats{display:grid;gap:.9rem}
 .feat{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(240,193,90,.3)}
 .feat i{display:grid;place-items:center;width:44px;height:44px;flex:none;border-radius:12px;background:#f0c15a;color:#1f3f2c}
@@ -152,6 +152,14 @@ header .btn{padding:.6rem 1rem;font-size:.9rem}
 .steps b{display:block;color:var(--green)}
 .steps span{color:var(--muted);font-size:.96rem}
 @media (max-width:860px){.split{grid-template-columns:1fr}}
+
+/* apiary photo strip */
+.apiary .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.2rem}
+.apiary figure{position:relative;margin:0;border-radius:16px;overflow:hidden;background:var(--sand);aspect-ratio:4/3;box-shadow:0 24px 50px -28px rgba(0,0,0,.45)}
+.apiary img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.apiary figure:hover img{transform:scale(1.05)}
+.apiary figcaption{position:absolute;left:12px;bottom:12px;padding:.3rem .75rem;border-radius:999px;background:rgba(20,40,29,.78);color:#f3cd73;font-size:.78rem;font-weight:600;letter-spacing:.04em}
+@media (max-width:860px){.apiary .grid{grid-template-columns:1fr;max-width:440px;margin-inline:auto}.apiary figure{aspect-ratio:3/2}}
 
 /* purity */
 .ingredients{border:1px solid var(--line);background:var(--cream);border-radius:10px;padding:2rem}
@@ -194,7 +202,7 @@ thead th:last-child{text-align:right}
 .packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;margin-top:2.4rem;align-items:end;perspective:1400px}
 .pack{position:relative;background:#faf6ec;border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transform-origin:50% 100%}
 .pack .img{position:relative;height:220px;overflow:hidden;background:var(--sand)}
-.pack .img img{width:100%;height:100%;object-fit:cover;object-position:55% 45%;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.pack .img img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
 .pack:hover .img img{transform:scale(1.05)}
 .pack .img:not(:has(img))::after{content:attr(data-need);position:absolute;inset:0;display:grid;place-items:center;padding:1rem;text-align:center;font-size:.82rem;color:#8a7f66;border:1px dashed #cdbf9f}
 .pack .body{display:flex;flex-direction:column;gap:.45rem;padding:1.4rem 1.6rem 1.6rem}
@@ -226,8 +234,6 @@ label{font-size:.88rem;font-weight:500;display:grid;gap:.35rem}
 input,textarea,select{font:inherit;padding:.7rem .85rem;border:1px solid #cfc6b2;border-radius:6px;background:#fff;color:var(--ink);width:100%}
 input:focus,textarea:focus,select:focus{outline:2px solid var(--honey);border-color:transparent}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.contact{list-style:none;display:grid;gap:1.1rem;margin-top:1.8rem}
-.contact b{display:block;color:#fff}
 @media (max-width:340px){.row{grid-template-columns:1fr}}
 
 footer{background:#1f3f2c;color:#c2cbbd;font-size:.9rem;padding:3rem 0 2rem}
@@ -329,6 +335,8 @@ main img{cursor:zoom-in}
   .grove .stack figure{aspect-ratio:auto}
   .grove figcaption{left:8px;bottom:8px;font-size:.68rem;padding:.2rem .55rem}
   .grove ul{font-size:.88rem;gap:.35rem}
+  .apiary .grid{gap:.7rem;margin-top:1.4rem}
+  .apiary figcaption{left:8px;bottom:8px;font-size:.68rem;padding:.2rem .55rem}
   .steps{gap:.9rem;margin-top:1.2rem}
   .ingredients{padding:1.3rem}
   .ingredients .v{font-size:1.8rem}
@@ -401,8 +409,8 @@ main img{cursor:zoom-in}
       </div>
     </div>
     <div class="art rise" style="--d:.35s">
-      <figure class="photo tilt" data-need="Photo needed: assets/apiary.jpg">
-        <img src="assets/apiary.jpg" width="1456" height="1088" fetchpriority="high" decoding="async" alt="Rows of Beevora hive boxes under Kikar trees beside a blooming mustard field" onerror="this.remove()">
+      <figure class="photo tilt" data-need="Photo needed: assets/Sunlit Rows of Rural Beehives.png">
+        <img src="assets/Sunlit%20Rows%20of%20Rural%20Beehives.png" width="1456" height="1092" fetchpriority="high" decoding="async" alt="Rows of Beevora hive boxes under Kikar trees beside a blooming mustard field at the apiary" onerror="this.remove()">
       </figure>
     </div>
     <div class="feats">
@@ -424,18 +432,18 @@ main img{cursor:zoom-in}
       <p class="cap reveal" style="--d:.2s">Kikar, also called Babool, grows wild along rivers and on dry land. In season its thorny branches fill with small golden flower balls, and our bees gather their nectar.</p>
       <ul class="reveal" style="--d:.3s"><li>Golden pom-pom flowers</li><li>Feathery, fine leaves</li><li>Hardy, thorny riverside tree</li></ul>
     </div>
-    <figure class="tall reveal" style="--d:.15s"><img src="assets/swarm.jpg" width="1080" height="1440" alt="Close-up of a honeybee swarm clustered together on a wooden frame" loading="lazy" decoding="async"><figcaption>The swarm, up close</figcaption></figure>
+    <figure class="tall reveal" style="--d:.15s"><img src="assets/kikar-bee.jpg" width="924" height="2000" alt="A honeybee collecting nectar from round yellow Kikar flowers" loading="lazy" decoding="async" style="object-position:30% 58%"><figcaption>Bee on Kikar blossom</figcaption></figure>
     <div class="stack">
-      <figure class="reveal" style="--d:.25s"><img src="assets/frames.jpg" width="1456" height="1092" alt="Beekeeper lifting a honeycomb frame covered with bees at the Beevora apiary" loading="lazy" decoding="async"><figcaption>Frame inspection</figcaption></figure>
-      <figure class="reveal" style="--d:.35s"><img src="assets/harvest.jpg" width="1456" height="1080" alt="Beekeepers uncapping honeycomb frames beside the honey extractor" loading="lazy" decoding="async"><figcaption>Harvest time</figcaption></figure>
+      <figure class="reveal" style="--d:.25s"><img src="assets/kikar-branch.jpg" width="960" height="640" alt="A Kikar branch with fine leaves and yellow flower balls" loading="lazy" decoding="async"><figcaption>Kikar flowers and leaves</figcaption></figure>
+      <figure class="reveal" style="--d:.35s"><img src="assets/kikar-tree.jpg" width="960" height="640" alt="Kikar tree branches covered with small yellow flowers" loading="lazy" decoding="async"><figcaption>Kikar tree in bloom</figcaption></figure>
     </div>
   </div>
 </section>
 
 <section id="origin">
   <div class="wrap split">
-    <figure class="photo reveal" data-need="Photo needed: assets/facility.jpg">
-      <img src="assets/facility.jpg" width="1456" height="1092" alt="Beevora honey facility with buckets of honey stacked for packing" loading="lazy" decoding="async" style="object-position:68% 30%" onerror="this.remove()">
+    <figure class="photo reveal" data-need="Photo needed: assets/White Bucket Showroom with Honey Branding.png">
+      <img src="assets/White%20Bucket%20Showroom%20with%20Honey%20Branding.png" width="1456" height="1092" alt="Beevora honey facility with sealed buckets of honey stacked and ready for packing" loading="lazy" decoding="async" style="object-position:68% 30%" onerror="this.remove()">
     </figure>
     <div>
       <p class="kicker reveal">Origin</p>
@@ -447,6 +455,19 @@ main img{cursor:zoom-in}
         <li><div><b>Harvested and filtered</b><span>The honey is taken from the hive and filtered to remove wax pieces and debris. Nothing else is done to it.</span></div></li>
         <li><div><b>Packed for you</b><span>Packed by Shri Ganesh Apiaries and Honey Farm and delivered to your home.</span></div></li>
       </ol>
+    </div>
+  </div>
+</section>
+
+<section class="apiary" id="apiary">
+  <div class="wrap">
+    <p class="kicker reveal">Our Apiaries</p>
+    <h2 class="reveal" style="--d:.1s">Straight from our hives</h2>
+    <p class="lead reveal" style="--d:.2s">Managed apiaries, hand-inspected frames and careful extraction — the way real honey is made.</p>
+    <div class="grid">
+      <figure class="reveal" style="--d:.15s"><img src="assets/Dense%20Honeybee%20Swarm%20on%20Hive%20Frame.png" width="1080" height="1440" alt="A dense cluster of honeybees covering a hive frame" loading="lazy" decoding="async"><figcaption>The colony, up close</figcaption></figure>
+      <figure class="reveal" style="--d:.25s"><img src="assets/Beekeeper%20Inspecting%20a%20Busy%20Honeycomb.png" width="1456" height="1088" alt="A beekeeper lifting a honeycomb frame covered with bees at the apiary" loading="lazy" decoding="async"><figcaption>Frame by frame</figcaption></figure>
+      <figure class="reveal" style="--d:.35s"><img src="assets/Beekeepers%20Working%20Under%20Green%20Netting.png" width="1456" height="1080" alt="Beekeepers uncapping honeycomb and spinning frames in the honey extractor" loading="lazy" decoding="async"><figcaption>Harvest &amp; extraction</figcaption></figure>
     </div>
   </div>
 </section>
@@ -527,10 +548,11 @@ main img{cursor:zoom-in}
     <p class="kicker reveal">Choose Your Pack</p>
     <h2 class="reveal" style="--d:.1s">Three sizes, one purity.</h2>
     <p class="lead reveal" style="--d:.2s">Message us on WhatsApp for the current price and delivery to your city.</p>
+    <!-- ponytail: pack shots temporary origin-jar.webp hain; jab 400/800/1000 ke alag photos milein, in teeno src ko badal dena -->
     <div class="packs">
-      <div class="pack reveal"><div class="img" data-need="Jar photo needed: assets/pack-400.jpg"><img src="assets/pack-400.jpg" width="1200" height="800" alt="Beevora Kikar Honey 400 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">400 g</span><span class="price">Price on WhatsApp</span></div><p>Try it first</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 400 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
-      <div class="pack pop reveal"><span class="tag">MOST POPULAR</span><div class="img" data-need="Jar photo needed: assets/pack-800.jpg"><img src="assets/pack-800.jpg" width="1200" height="800" alt="Beevora Kikar Honey 800 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">800 g</span><span class="price">Price on WhatsApp</span></div><p>Family pack, our most chosen size</p><a class="btn btn-gold" data-wa="Hello, I would like to order Beevora Kikar Honey 800 g. Please share the price and delivery details." href="#enquire"><svg aria-hidden="true"><use href="#wa"/></svg>Order on WhatsApp</a></div></div>
-      <div class="pack reveal"><div class="img" data-need="Jar photo needed: assets/pack-1000.jpg"><img src="assets/pack-1000.jpg" width="1200" height="800" alt="Beevora Kikar Honey 1000 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">1000 g</span><span class="price">Price on WhatsApp</span></div><p>Best value for daily use</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 1000 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
+      <div class="pack reveal"><div class="img" data-need="Jar photo needed: 400 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 400 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">400 g</span><span class="price">Price on WhatsApp</span></div><p>Try it first</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 400 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
+      <div class="pack pop reveal"><span class="tag">MOST POPULAR</span><div class="img" data-need="Jar photo needed: 800 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 800 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">800 g</span><span class="price">Price on WhatsApp</span></div><p>Family pack, our most chosen size</p><a class="btn btn-gold" data-wa="Hello, I would like to order Beevora Kikar Honey 800 g. Please share the price and delivery details." href="#enquire"><svg aria-hidden="true"><use href="#wa"/></svg>Order on WhatsApp</a></div></div>
+      <div class="pack reveal"><div class="img" data-need="Jar photo needed: 1000 g pack shot"><img src="assets/origin-jar.webp" width="1254" height="1254" alt="Beevora Kikar Honey 1000 g jar" loading="lazy" decoding="async" onerror="this.remove()"></div><div class="body"><div class="row"><span class="w">1000 g</span><span class="price">Price on WhatsApp</span></div><p>Best value for daily use</p><a class="btn btn-line" data-wa="Hello, I would like to order Beevora Kikar Honey 1000 g. Please share the price and delivery details." href="#enquire">Order on WhatsApp</a></div></div>
     </div>
   </div>
 </section>
